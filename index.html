@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyPal - Smart Study Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <header>
+    <h1>📚 StudyPal</h1>
+    <p>Your Smart Study Planner</p>
+  </header>
+
+  <main>
+    <section id="task-scheduler">
+      <h2>Add Study Task</h2>
+      <form id="task-form">
+        <input type="text" id="subject" placeholder="Subject" required>
+        <input type="text" id="task" placeholder="Task" required>
+        <input type="datetime-local" id="deadline" required>
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+
+    <section id="task-list">
+      <h2>Today's Tasks</h2>
+      <ul id="tasks"></ul>
+    </section>
+
+    <section id="progress">
+      <h2>Progress Tracker</h2>
+      <canvas id="progressChart"></canvas>
+    </section>
+  </main>
+
+  <script src="scripts/planner.js"></script>
+  <script src="scripts/tracker.js"></script>
+  <script src="scripts/reminder.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
