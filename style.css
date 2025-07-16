@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f4f8;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+form input, form button {
+  margin: 5px;
+  padding: 10px;
+}
+#tasks li {
+  margin-bottom: 10px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+```
+
+├── app.js
+```js
+document.addEventListener("DOMContentLoaded", () => {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+});
